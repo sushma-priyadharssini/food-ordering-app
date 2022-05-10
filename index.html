@@ -1,0 +1,32 @@
+<!-- Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display. -->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Food ordering App</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        </head>
+        <body>
+            <div class="container">
+                <div class="search-bar">
+                    <input type="text" class="search-box"></input>
+                    <div id="filter-fav" class="bookmark marked"></div>
+                </div>
+                <div class="sort-filter-bar">
+                    <div>
+                        <label>Sort By: </label>
+                        <select class="sort-by">
+                            <option value="rating">Rating</option>
+                            <option value="eta">ETA</option>
+                        </select>
+                    </div>
+                    <div class="filter-container"></div>
+                </div>
+                <div class="card-container"></div>
+            </div>
+            <script src='lodash.min.js'></script>
+            <script src="index.js"></script>
+        </body>
+    </html>

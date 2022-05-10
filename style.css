@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+    width: 100%; 
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.card-container {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; */
+    padding: 0.5em;
+}
+
+.restaurant-card {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 20px 55px;
+    background: orange;
+    margin-bottom: 85px;
+    box-sizing: border-box;
+}
+
+.restaurant-card.dummy-card {
+    background-color: white;
+    border: none;
+}
+
+.search-bar, .sort-filter-bar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar > .search-box {
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.bookmark {
+    border: 1px solid black;
+    height: 2rem;
+    width: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+    float: right;
+}
+
+.marked {
+    background-color: purple;
+}
+
+.unmarked {
+    background-color: white;
+}
+
+@media screen and (min-width: 640px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .restaurant-card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .restaurant-card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}
